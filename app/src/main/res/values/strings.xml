@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FurnSpace</string>
+    <string name="webClientId">806718788798-jbn3npat1lremfjjho19vouimsd0dqhi.apps.googleusercontent.com</string>
+    <string name="webClientId_diff">542874271936-lt4u528uqspsamfm8ps49t01k84egbm4.apps.googleusercontent.com</string>
 </resources>
