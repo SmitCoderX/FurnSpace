@@ -3,6 +3,8 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.googleService)
     alias(libs.plugins.secretGradlePlugin)
+    alias(libs.plugins.daggerPlugin)
+    id("org.jetbrains.kotlin.kapt")
 }
 
 android {
@@ -62,6 +64,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    implementation(libs.service.auth)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -70,13 +73,48 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    // Firebase Auth
+    // Firebase
+    implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.auth)
-    implementation(libs.service.auth)
+    implementation(libs.firebase.firestore)
+    implementation(libs.firebase.analytics)
+//    implementation(libs.firebase.crashlytics)
+    implementation(libs.firebase.database)
+    implementation(libs.firebase.storage)
+    implementation(libs.firebase.cloud.messaging)
+    implementation(libs.firebase.inapp.messaging)
 
+    // Navigation
+    implementation(libs.android.navigation)
+
+    // Lifecycle, ViewModel
+    implementation(libs.android.viewModel)
+    implementation(libs.android.lifecycle)
+
+    // Coil
+    implementation(libs.coil.compose)
+    implementation(libs.coil.compose.gif)
 
     // Credential Manager
     implementation(libs.androidx.credentials)
     implementation(libs.androidx.credentials.play.service)
     implementation(libs.androidx.credentials.googleId)
+
+    // Room
+    implementation(libs.android.room)
+    implementation(libs.room.extension)
+    implementation(libs.room.paging)
+    kapt(libs.room.annotation)
+
+    // Paging
+    implementation(libs.android.paging)
+    implementation(libs.android.paging.compose)
+
+    // Dagger-Hilt
+    implementation(libs.android.dagger)
+    kapt(libs.dagger.annotation)
+}
+
+kapt {
+    correctErrorTypes = true
 }
