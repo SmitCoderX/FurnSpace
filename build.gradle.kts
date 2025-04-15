@@ -10,5 +10,4 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid) apply false
     alias(libs.plugins.googleService) apply false
     alias(libs.plugins.secretGradlePlugin) apply false
-    alias(libs.plugins.daggerPlugin) apply false
 }

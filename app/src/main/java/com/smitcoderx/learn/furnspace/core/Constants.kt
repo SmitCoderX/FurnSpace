@@ -2,10 +2,7 @@ package com.smitcoderx.learn.furnspace.core
 
 object Constants {
     const val TAG = "FurnSpace"
-
     const val USERS = "users"
-
-
 }
 
 object Screens {
@@ -14,5 +11,4 @@ object Screens {
     const val OTP = "otp"
     const val PROFILE = "profile"
     const val PRIVACY = "privacy"
-
 }
