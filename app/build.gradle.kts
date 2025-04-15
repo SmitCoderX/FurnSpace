@@ -3,17 +3,16 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.googleService)
     alias(libs.plugins.secretGradlePlugin)
-    alias(libs.plugins.daggerPlugin)
-    id("org.jetbrains.kotlin.kapt")
 }
 
 android {
     namespace = "com.smitcoderx.learn.furnspace"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.smitcoderx.learn.furnspace"
         minSdk = 24
+        //noinspection OldTargetApi
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -104,17 +103,11 @@ dependencies {
     implementation(libs.android.room)
     implementation(libs.room.extension)
     implementation(libs.room.paging)
-    kapt(libs.room.annotation)
 
     // Paging
     implementation(libs.android.paging)
     implementation(libs.android.paging.compose)
 
-    // Dagger-Hilt
-    implementation(libs.android.dagger)
-    kapt(libs.dagger.annotation)
-}
-
-kapt {
-    correctErrorTypes = true
+    // Timber
+    implementation(libs.timber)
 }

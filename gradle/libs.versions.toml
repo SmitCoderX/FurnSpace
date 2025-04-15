@@ -16,7 +16,7 @@ secretsPlugin = "2.0.1"
 serviceAuth = "21.1.1"
 nav_version = "2.7.7"
 coilVersion = "2.6.0"
-daggerVersion = "2.48"
+timberVersion = "5.0.1"
 roomVersion = "2.6.1"
 pagingVersion = "3.3.0"
 
@@ -62,10 +62,6 @@ android-lifecycle = { group = "androidx.lifecycle", name = "lifecycle-runtime-co
 coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coilVersion" }
 coil-compose-gif = { group = "io.coil-kt", name = "coil-gif", version.ref = "coilVersion" }
 
-# Dagger
-android-dagger = { group = "com.google.dagger", name = "hilt-android", version.ref = "daggerVersion" }
-dagger-annotation = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "daggerVersion" }
-
 # RoomDB
 android-room = { group = "androidx.room", name = "room-runtime", version.ref = "roomVersion" }
 room-annotation = { group = "androidx.room", name = "room-compiler", version.ref = "roomVersion" }
@@ -76,10 +72,11 @@ room-paging = { group = "androidx.room", name = "room-paging", version.ref = "ro
 android-paging = { group = "androidx.paging", name = "paging-runtime", version.ref = "pagingVersion" }
 android-paging-compose = { group = "androidx.paging", name = "paging-compose", version.ref = "pagingVersion" }
 
+# Timber
+timber = {group = "com.jakewharton.timber", name = "timber", version.ref = "timberVersion"}
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 jetbrainsKotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 googleService = { id = "com.google.gms.google-services", version.ref = "googleServices" }
 secretGradlePlugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secretsPlugin" }
-daggerPlugin = { id = "com.google.dagger.hilt.android", version.ref = "daggerVersion" }
