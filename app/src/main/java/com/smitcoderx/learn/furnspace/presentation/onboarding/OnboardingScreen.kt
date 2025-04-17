@@ -29,6 +29,7 @@ import com.smitcoderx.learn.furnspace.presentation.theme.AccentColor
 import com.smitcoderx.learn.furnspace.presentation.theme.Fonts
 import com.smitcoderx.learn.furnspace.presentation.widgets.AsyncImagePainter
 import com.smitcoderx.learn.furnspace.presentation.widgets.Space
+import com.smitcoderx.learn.furnspace.presentation.widgets.shimmerEffect
 
 @Composable
 fun OnboardingScreen(rootNavigation: NavHostController) {
@@ -46,7 +47,7 @@ fun OnboardingScreen(rootNavigation: NavHostController) {
         Text(
             buildAnnotatedString {
                 append(stringResource(R.string.login_text))
-                pushStyle(SpanStyle(color = AccentColor))
+                pushStyle(SpanStyle(brush = shimmerEffect()))
                 append(stringResource(R.string.login_text_special))
             },
             fontFamily = Fonts.mulishFontFamily,
