@@ -5,7 +5,8 @@
     <string name="privacy"><![CDATA[Terms & Privacy Policy]]></string>
     <string name="login_button_text">Start Networking</string>
     <string name="lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\n\n</string>
-    <string name="create_acc">Create a Account</string>
+    <string name="create_acc">Create your\n</string>
+    <string name="create_acc_space">space</string>
     <string name="enter_username">Enter Username</string>
     <string name="enter_pass">Enter Password</string>
     <string name="enter_email">Enter Email</string>
