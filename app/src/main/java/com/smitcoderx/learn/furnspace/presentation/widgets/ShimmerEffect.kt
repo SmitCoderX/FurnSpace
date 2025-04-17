@@ -6,7 +6,7 @@ import androidx.compose.animation.core.infiniteRepeatable
 import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.animation.core.tween
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.TileMode
@@ -17,7 +17,7 @@ import com.smitcoderx.learn.furnspace.presentation.theme.ExtraLightAccentColor
 import com.smitcoderx.learn.furnspace.presentation.theme.LightAccentColor
 
 @Composable
-fun Brush.ShimmerEffect(modifier: Modifier = Modifier) {
+fun shimmerEffect(): Brush {
     val gradientList = listOf(ExtraLightAccentColor, LightAccentColor, AccentColor)
     val currentFontSizePx = with(LocalDensity.current) { 50.sp.toPx() }
     val currentFontSizeDoublePx = currentFontSizePx * 2
@@ -26,7 +26,8 @@ fun Brush.ShimmerEffect(modifier: Modifier = Modifier) {
     val offset by infiniteTransition.animateFloat(
         initialValue = 0f,
         targetValue = currentFontSizeDoublePx,
-        animationSpec = infiniteRepeatable(tween(1200, easing = LinearEasing)), label = ""
+        animationSpec = infiniteRepeatable(tween(1200, easing = LinearEasing)),
+        label = ""
     )
     val brush = Brush.linearGradient(
         gradientList,
@@ -34,4 +35,5 @@ fun Brush.ShimmerEffect(modifier: Modifier = Modifier) {
         end = Offset(offset + currentFontSizePx, offset + currentFontSizePx),
         tileMode = TileMode.Mirror
     )
+    return brush
 }
