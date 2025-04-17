@@ -24,7 +24,7 @@ fun RootNavigation() {
             PrivacyScreen()
         }
         composable(Screens.CreateAccount.title) {
-            CreateAccount()
+            CreateAccount(navController)
         }
     }
 }

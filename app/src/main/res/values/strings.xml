@@ -11,6 +11,9 @@
     <string name="enter_pass">Enter Password</string>
     <string name="enter_email">Enter Email</string>
     <string name="sign_up">Sign Up</string>
-    <string name="already_account">Alerady have a Account</string>
+    <string name="already_account">Already have a Account</string>
+    <string name="create_account">Create account now</string>
     <string name="or_sign_in">Or Continue With\n</string>
+    <string name="google_sign_in">Sign in with Google</string>
+    <string name="google_sign_up">Sign up with Google</string>
 </resources>
