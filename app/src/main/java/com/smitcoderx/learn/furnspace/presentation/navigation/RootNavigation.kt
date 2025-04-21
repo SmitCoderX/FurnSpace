@@ -17,9 +17,9 @@ fun RootNavigation() {
         composable(Screens.Onboarding.title) {
             OnboardingScreen(navController)
         }
-        composable(Screens.SignIn.title) {
-            SignInScreen()
-        }
+//        composable(Screens.SignIn.title) {
+//            SignInScreen(navController)
+//        }
         composable(Screens.Privacy.title) {
             PrivacyScreen()
         }

@@ -19,6 +19,7 @@ coilVersion = "2.6.0"
 timberVersion = "5.0.1"
 roomVersion = "2.6.1"
 pagingVersion = "3.3.0"
+lottieVersion = "6.6.6"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -74,6 +75,9 @@ android-paging-compose = { group = "androidx.paging", name = "paging-compose", v
 
 # Timber
 timber = {group = "com.jakewharton.timber", name = "timber", version.ref = "timberVersion"}
+
+# Lottie
+lottie = {group = "com.airbnb.android", name = "lottie-compose", version.ref = "lottieVersion"}
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

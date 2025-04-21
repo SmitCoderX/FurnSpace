@@ -16,4 +16,6 @@
     <string name="or_sign_in">Or Continue With\n</string>
     <string name="google_sign_in">Sign in with Google</string>
     <string name="google_sign_up">Sign up with Google</string>
+    <string name="onboard_message">We\'re excited to have you here. 🌟 Connect, share, and make new friends with your community. 🤝 Let’s get started — it’s time to create some amazing memories together! 🚀</string>
+    <string name="account_lottie_url">https://lottie.host/151204f2-d52c-4cfe-91df-596eb73e2b23/sUbcQ1vCoD.json</string>
 </resources>
